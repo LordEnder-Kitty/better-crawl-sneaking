@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "better-crawl-sneaking",
+	"version": "${version}",
+	"name": "Better Crawl Sneaking",
+	"description": "Changes sneaking function while crawling to also prevent you from exiting a crawlspace",
+	"authors": [ "LordEnder_Kitty" ],
+	"license": "MIT",
+	"icon": "assets/better-crawl-sneaking/icon.png",
+	"environment": "client",
+	"mixins": [ "better-crawl-sneaking.mixins.json" ],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": ">=1.20.6",
+		"java": ">=21"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modrinth": "https://modrinth.com/mod/better-crawl-sneaking",
+				"curseforge": "https://www.curseforge.com/minecraft/mc-mods/better-crawl-sneaking",
+				"github": "https://github.com/LordEnder-Kitty/better-crawl-sneaking"
+			}
+		}
+	}
+}
