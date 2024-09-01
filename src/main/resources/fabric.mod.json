@@ -11,7 +11,7 @@
 	"mixins": [ "better-crawl-sneaking.mixins.json" ],
 	"depends": {
 		"fabricloader": "*",
-		"minecraft": ">=1.20.6",
+		"minecraft": ">=1.20.5",
 		"java": ">=21"
 	},
 	"custom": {
