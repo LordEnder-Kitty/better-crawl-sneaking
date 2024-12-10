@@ -24,7 +24,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         Box box = this.getBoundingBox();
         
         cir.setReturnValue(this.isCrawling() ? cir.getReturnValue() || this.getWorld().isSpaceEmpty(
-                this, new Box(box.minX + offsetX, box.maxY, box.minZ + offsetZ, box.maxX + offsetX, box.maxY + 0.5, box.maxZ + offsetZ)
+                this, new Box(box.minX + offsetX, box.maxY, box.minZ + offsetZ, box.maxX + offsetX, box.maxY + 0.9, box.maxZ + offsetZ)
         ) : cir.getReturnValue());
     }
 }
