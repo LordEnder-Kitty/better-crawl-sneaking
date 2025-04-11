@@ -20,7 +20,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     }
     
     @Inject(method = "isSpaceAroundPlayerEmpty", at = @At(value = "RETURN"), cancellable = true)
-    private void isSpaceAroundPlayerEmpty(double offsetX, double offsetZ, float f, CallbackInfoReturnable<Boolean> cir) {
+    private void isSpaceAroundPlayerEmpty(double offsetX, double offsetZ, double d, CallbackInfoReturnable<Boolean> cir) {
         Box box = this.getBoundingBox();
         
         cir.setReturnValue(this.isCrawling() ? cir.getReturnValue() || this.getWorld().isSpaceEmpty(
