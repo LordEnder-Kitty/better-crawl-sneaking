@@ -23,7 +23,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     private void isSpaceAroundPlayerEmpty(double offsetX, double offsetZ, double d, CallbackInfoReturnable<Boolean> cir) {
         Box box = this.getBoundingBox();
         
-        cir.setReturnValue(this.isCrawling() ? cir.getReturnValue() || this.getWorld().isSpaceEmpty(
+        cir.setReturnValue(this.isCrawling() ? cir.getReturnValue() || this.getEntityWorld().isSpaceEmpty(
                 this, new Box(box.minX + offsetX, box.maxY, box.minZ + offsetZ, box.maxX + offsetX, box.maxY + 0.9, box.maxZ + offsetZ)
         ) : cir.getReturnValue());
     }
